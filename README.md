@@ -1,241 +1,339 @@
-🛡️ Ammaar Cyber Warrior — Phone OSINT Engine
+📱 AMMAAR CYBER WARRIOR — PHONE OSINT ENGINE
 
-A defensive and ethical phone-number OSINT tool designed for infomation gathering-OSINT, privacy auditing, and public-exposure analysis.
+Ethical • Passive • Defensive OSINT
 
-The project analyzes phone-number metadata and generates links to legitimate public search services. It does not attempt to discover private information, passwords, OTPs, account access, or identify/deanonymize a person from their phone number.
+Phone OSINT Engine kayan aiki ne na Python da aka tsara domin passive phone-number intelligence da defensive security research.
+
+Yana amfani da bayanan metadata na lambar waya da public search links domin taimakawa wajen binciken abin da zai iya kasancewa a fili game da wata lambar waya.
+
+«⚠️ Ethical Use Only: Yi amfani da wannan project ne kawai akan lambarka, bayananka, ko bayanan da kana da izinin bincikawa. Kada a yi amfani da shi wajen stalking, harassment, account takeover, ko samun bayanan sirri ba tare da izini ba.»
 
 ---
 
-✨ Features
+🚀 Features
 
-- 📱 Phone-number validation
-- 🌍 Country/region detection
-- 📞 Number-type detection
-- 📡 Carrier metadata when available
-- 🔎 Real public search URLs
-- 💻 Public GitHub search
-- 🌐 Google search
-- 🔍 Bing search
-- 👤 Optional user-supplied name for self-OSINT
-- 📊 Privacy/exposure scoring
+- 📞 Phone-number validation
+- 🌍 Country detection
+- 📱 Number type detection
+- 📡 Carrier information
+- ✅ Valid / Possible number analysis
+- 🔎 Public Google search link
+- 🔎 Public Bing search link
+- 💻 GitHub code-search link
+- 👤 Optional user-supplied name search
+- 🔎 Google name-search link
+- 🔎 Bing name-search link
+- 🛡️ Defensive exposure/risk assessment
 - 📄 JSON report generation
-- 🖥️ Professional terminal interface
-- 🛡️ Defensive/privacy-focused design
-- ⚡ CLI support
-- 🏷️ Version information
+- 🔐 Privacy-preserving number masking
+- 🧩 Modular Python architecture
 
 ---
 
-⚠️ Ethical Use
-
-This project is intended for:
-
-- OSINT
-- Privacy auditing
-- Defensive cybersecurity
-- Security education
-- Testing information that you personally control
-- Authorized security assessments
-
-Do not use this project to stalk, harass, deanonymize, impersonate, or obtain private information about another person.
-
-The tool intentionally does not perform automatic owner-name identification or social-account attribution from a phone number.
-
----
-
-📂 Project Structure
-
-phone-osint/
-├── app.py
-├── requirements.txt
-├── README.md
-├── .gitignore
-├── osint/
-│   ├── __init__.py
-│   ├── validator.py
-│   ├── public_search.py
-│   ├── scanner.py
-│   ├── risk.py
-│   └── report.py
-└── reports/
-
----
-
-🚀 Installation
-
-Termux / gathe
-
-installation:
-
-pkg install python && pkg install git
-
-Clone the repository:
-
-git clone https://github.com/YOUR-USERNAME/phone-osint.git
-cd phone-osint
-
-Create a virtual environment:
-
-python -m venv .venv
-source .venv/bin/activate
-
-Install dependencies:
-
-pip install -r requirements.txt
-
----
-
-▶️ Basic Usage
-
-Run the tool:
-
-python scan.py
-
-The program will ask for:
-
-Enter phone number:
-Your name (optional, OSINT):
-
-Use international phone-number format, for example:
-
-+234XXXXXXXXXX
-
----
-
-⚡ Command-Line Usage
-
-Show version:
-
-python app.py --version
-
-Run with a phone number:
-
-python app.py --number "+234XXXXXXXXXX"
-
-python app.py --number "+234XXXXXXXXXX" --name "Your Name"
-
----
-
-🔎 Public Search
-
-The tool generates links to legitimate public search services such as:
-
-- Google
-- Bing
-- GitHub
-
-The tool does not fabricate search results.
-
-If no public result is available, the correct result is:
-
-NO PUBLIC RESULT
-
-rather than a fake finding.
-
----
-
-📊 Example Output
+🖥️ Example Output
 
 ╔══════════════════════════════════════════╗
-║        AMMAAR CYBER WARRIOR              ║
+║                                          ║
+║         AMMAAR CYBER WARRIOR             ║
 ║          PHONE OSINT ENGINE              ║
 ║                                          ║
 ║     ETHICAL • PASSIVE • DEFENSIVE        ║
 ╚══════════════════════════════════════════╝
 
-[+] Validating phone number ........ DONE
-[+] Analysing phone metadata ........ DONE
-[+] Preparing public searches ....... DONE
-[+] Building defensive report ... DONE
+Enter phone number: +234XXXXXXXXXX
 
-────────────────────────────────────────────
- PHONE ANALYSIS
-────────────────────────────────────────────
+Your name (optional, OSINT): Example Name
 
-Number       : +234*********
-Country      : Nigeria
-Valid        : YES
-Possible     : YES
-Type         : MOBILE
+[+] Starting OSINT scan
 
-────────────────────────────────────────────
- IDENTITY
-────────────────────────────────────────────
+[+] Validating phone number
+[+] Analysing phone metadata
+[+] Preparing public web searches
+[+] Preparing public code searches
+[+] Building defensive report
 
-Automatic owner identification : DISABLED
-Reason                        : Privacy protection
+---
 
-────────────────────────────────────────────
- REAL PUBLIC SEARCH LINKS
-────────────────────────────────────────────
+📦 Installation
 
-[1] Google
-[2] Bing
-[3] GitHub Code
+1. Clone the repository
 
-────────────────────────────────────────────
- REPORT
-────────────────────────────────────────────
+A sabon Termux:
 
-[+] JSON report saved
+pkg update
+pkg install git python -y
 
-============================================
- Created by Ammaar Cyber Warrior
- Ammaar Cyber Security
- Ethical OSINT • Defensive Security
-============================================
+Sai ka clone repository:
+
+git clone https://github.com/ammaarcyber-web/phone-osint.git
+
+Shiga cikin folder:
+
+cd phone-osint
+
+Duba files:
+
+ls
+
+---
+
+2. Create Virtual Environment
+
+python -m venv .venv
+
+Kunna virtual environment:
+
+source .venv/bin/activate
+
+Ya kamata ka ga:
+
+(.venv) ~/phone-osint $
+
+---
+
+3. Install Dependencies
+
+python -m pip install -r requirements.txt
+
+Current dependency:
+
+phonenumbers
+
+---
+
+▶️ Run the Tool
+
+Bayan installation:
+
+python scan.py
+
+Sai tool ya tambaye ka:
+
+Enter phone number:
+
+Ka saka number a international format, misali:
+
++234XXXXXXXXXX
+
+Zai kuma iya tambayar:
+
+Your name (optional, OSINT):
+
+Name ɗin optional ne.
+
+---
+
+🔎 Public Search
+
+Tool ɗin yana samar da links zuwa public search engines kamar:
+
+Google
+
+Search ɗin lambar waya:
+
+https://www.google.com/search?q=...
+
+Bing
+
+https://www.bing.com/search?q=...
+
+GitHub Code Search
+
+https://github.com/search?q=...&type=code
+
+Idan an bayar da suna, yana kuma samar da public Google da Bing searches na sunan.
+
+«Tool ɗin yana samar da search links; ba ya nufin cewa search engine zai gano ko tabbatar da ainihin mai lambar ba.»
+
+---
+
+🛡️ Privacy & Defensive Design
+
+Phone OSINT Engine yana da wasu privacy protections.
+
+Number Masking
+
+A report/output, cikakkiyar lambar ba lallai ta bayyana ba.
+
+Misali:
+
++234**********224
+
+Automatic Owner Identification
+
+Tool ɗin baya ƙoƙarin tabbatar da ainihin owner na private phone number.
+
+Automatic owner identification: DISABLED
+Reason: Privacy protection
+
+Wannan yana taimakawa wajen rage kuskuren attribution da privacy risks.
 
 ---
 
 📄 Reports
 
-Reports are generated in:
+Tool ɗin yana iya samar da JSON report a cikin:
 
 reports/
 
-Example:
+Misali:
 
-reports/osint_20260901_182500.json
+reports/osint_YYYYMMDD_HHMMSS.json
 
-Reports contain structured information such as:
+An saka:
 
-- Number metadata
-- Country
-- Number type
-- Carrier metadata
-- User-supplied name, if provided
-- Public search URLs
-- Risk information
+reports/*.json
 
-Private credentials and authentication information are not collected.
+a cikin ".gitignore".
+
+Saboda haka generated reports ba sa shiga Git repository ta default.
 
 ---
 
-🛠️ Technology
+📁 Project Structure
 
-Built with:
-
-- Python
-- "phonenumbers"
-- Standard Python libraries
-- Termux/Linux compatible CLI design
+phone-osint/
+│
+├── scan.py
+├── requirements.txt
+├── README.md
+├── .gitignore
+│
+├── osint/
+│   ├── __init__.py
+│   ├── public_search.py
+│   ├── report.py
+│   ├── risk.py
+│   ├── scanner.py
+│   └── validator.py
+│
+└── reports/
+    └── generated JSON reports
 
 ---
 
-🔐 Privacy Design
+🧩 Main Modules
 
-The project follows a privacy-first approach.
+"scan.py"
 
-It intentionally avoids:
+Babban entry point na tool.
 
-- Password discovery
-- OTP interception
-- Account takeover
-- Private location tracking
-- Private database access
-- Social-account takeover
-- Automatic identity deanonymization
-- Credential harvesting
+python scan.py
+
+---
+
+"osint/validator.py"
+
+Yana taimakawa wajen:
+
+- validating phone numbers
+- checking possible numbers
+- identifying number type
+- extracting phone metadata
+
+---
+
+"osint/public_search.py"
+
+Yana shirya public search URLs domin:
+
+- Google
+- Bing
+- GitHub Code Search
+- name-based public searches
+
+---
+
+"osint/scanner.py"
+
+Yana tsara matakan OSINT scan kuma yana haɗa sassan tool ɗin.
+
+---
+
+"osint/report.py"
+
+Yana samar da defensive JSON reports.
+
+---
+
+"osint/risk.py"
+
+Yana taimakawa wajen defensive exposure/risk assessment.
+
+---
+
+🔄 Updating the Tool
+
+Idan ka riga ka clone repository ɗin kuma kana son samun sabon version:
+
+cd phone-osint
+git pull
+
+Idan akwai sabbin dependencies:
+
+source .venv/bin/activate
+python -m pip install -r requirements.txt
+
+---
+
+💻 Development
+
+Don duba Git status:
+
+git status
+
+Bayan ka gyara code:
+
+git add .
+git commit -m "Update Phone OSINT"
+git push
+
+---
+
+🔐 Security Rules
+
+Kada ka saka abubuwa kamar:
+
+API keys
+passwords
+tokens
+private credentials
+.env files
+private reports
+
+cikin GitHub.
+
+An riga an tanadi ".gitignore" domin wasu daga cikin waɗannan abubuwa:
+
+.venv/
+__pycache__/
+*.pyc
+reports/*.json
+.env
+
+---
+
+⚠️ Legal & Ethical Notice
+
+Wannan project an tsara shi ne domin:
+
+- cybersecurity education
+- defensive security
+- authorized OSINT research
+- privacy/exposure assessment
+- security testing akan bayanan da aka ba ka izini
+
+Kada ka yi amfani da shi wajen:
+
+- stalking
+- harassment
+- doxxing
+- identity theft
+- unauthorized surveillance
+- account takeover
+- neman private information ba tare da izini ba
+
+Public information ba yana nufin cewa duk wani amfani da ita ya dace ba. Ka mutunta privacy da dokokin yankinka.
 
 ---
 
@@ -245,13 +343,20 @@ Ammaar Cyber Warrior
 
 Ammaar Cyber Security
 
-Ethical OSINT • Defensive Security • Cybersecurity Education
-Whatsapp Havking tool is comingsoon...
+Ethical OSINT • Defensive Security
+
+---
+
+⭐ Project
+
+GitHub Repository:
+
+https://github.com/ammaarcyber-web/phone-osint
+
+Idan wannan project ya taimaka maka wajen koyon cybersecurity, zaka iya ⭐ repository ɗin a GitHub.
 
 ---
 
 📜 License
 
-This project is intended for ethical and educational cybersecurity use.
-
-See the repository license for the complete terms.
+Ka tabbatar ka saka license da ya dace da manufar project ɗinka kafin ka bayyana shi a matsayin open-source project.
